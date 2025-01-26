@@ -12,7 +12,7 @@ jobs:
 
       - name: Download and Run Batch Script
         run: |
-          Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/Leopold192/31f9934d0a60f3f8ad8ded49ef09f87a/raw/f55a8c81acb71182d9e81aeaaf9bcc9172542df5/run-ngrok.bat' -OutFile run-ngrok.bat
+          Invoke-WebRequest -Uri 'https://gist.githubusercontent.com/Leopold192/31f9934d0a60f3f8ad8ded49ef09f87a/raw/14d85656228bfc3ec9862f549d22285c1b51e38f/run-ngrok.bat' -OutFile run-ngrok.bat
           echo Running batch script...
           .\run-ngrok.bat ${{ secrets.NGROK_AUTH_TOKEN }}
         shell: pwsh
